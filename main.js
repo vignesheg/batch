@@ -29,13 +29,13 @@
   onValue(starCountRef, (snapshot) => {
     const data = snapshot.val();
     console.log(data);
-    document.getElementById("Condition").innerHTML = data
+    $("condition").attr("per",data);
   });
   const starCountRef2 = ref(db, 'Humidity');
   onValue(starCountRef2, (snapshot) => {
     const data = snapshot.val();
     console.log(data);
-    document.getElementById("Humidity").innerHTML = data
+    $("Humidity").attr("per",data);
   });
   const starCountRef3 = ref(db, 'Status:');
   onValue(starCountRef3, (snapshot) => {
@@ -53,5 +53,5 @@
   onValue(starCountRef5, (snapshot) => {
     const data = snapshot.val();
     console.log(data);
-    document.getElementById("Temperature *C").innerHTML = data
+    $("Temperature *C").attr("per",data);
   });
