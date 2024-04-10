@@ -109,29 +109,47 @@
          </section> 
 
           <div class="skills">
+<div class="skills">
   <div class="skill">
     <div class="skill-name">HTML</div>
     <div class="skill-bar">
-      <div class="skill-per" per="20%" id="Condition" style="max-width:20%"></div>
+      <div class="skill-per" per="20%" id="htmlPer" style="max-width:20%"></div>
     </div>
   </div>
 
   <div class="skill">
     <div class="skill-name">CSS</div>
     <div class="skill-bar">
-      <div class="skill-per" per="70%" id="Humidity" style="max-width:70%"></div>
+      <div class="skill-per" per="70%" id="cssPer" style="max-width:70%"></div>
     </div>
   </div>
 
   <div class="skill">
     <div class="skill-name">Javascript</div>
     <div class="skill-bar">
-      <div class="skill-per" per="60%" id="Temperature *C" style="max-width:60%"></div>
+      <div class="skill-per" per="60%" id="jsPer" style="max-width:60%"></div>
     </div>
   </div>
-
-
 </div>
+
+<script>
+  // Assume you have variables containing the updated percentage values
+  var htmlPercentage = 20;
+  var cssPercentage = 70;
+  var jsPercentage = 60;
+
+  // Update HTML percentage
+  document.getElementById('htmlPer').setAttribute('per', id="Temperature*C" + "%");
+  document.getElementById('htmlPer').style.maxWidth = htmlPercentage + "%";
+
+  // Update CSS percentage
+  document.getElementById('cssPer').setAttribute('per', cssPercentage + "%");
+  document.getElementById('cssPer').style.maxWidth = cssPercentage + "%";
+
+  // Update JavaScript percentage
+  document.getElementById('jsPer').setAttribute('per', jsPercentage + "%");
+  document.getElementById('jsPer').style.maxWidth = jsPercentage + "%";
+</script>
 
 
         
